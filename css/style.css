@@ -131,7 +131,7 @@ main .container_up .buttons_cont button {
 }
 
 .main_ticket .details section:nth-child(2) .dati {
-    margin-left: 80px;
+    margin-left: 30px;
 }
 
 .main_ticket .details section:nth-child(2) .dati:nth-child(1) {
