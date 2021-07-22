@@ -92,6 +92,10 @@ main .container_up .buttons_cont button {
 
 /* container bottom */
 
+#ticket {
+    display: none;
+}
+
 .container_bottom .ticket_title {
     height: 100px;
     display: flex;
