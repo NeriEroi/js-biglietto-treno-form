@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #B91450;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+/* container up */
+
+main .container_up {
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* containers degli inputs e dei buttons */
+main .container_up .all_inputs{
+    display: flex;
+}
+
+main .container_up .buttons_cont {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+/* / containers degli inputs e dei buttons */
+
+main .container_up .input_cont {
+    width: 33.33%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .container_up .input_cont #name,
+main .container_up .input_cont #km,
+main .container_up .input_cont #age {
+    height: 40px;
+    width: 200px;
+    margin-top: 20px;
+    border: 1px solid #B91450;
+    border-radius: 5px;
+}
+
+main .container_up .input_cont #name:hover,
+main .container_up .input_cont #km:hover,
+main .container_up .input_cont #age:hover {
+    background-color: #B91450;
+    color: white;
+}
+
+main .container_up .input_cont #name,
+main .container_up .input_cont #km {
+    text-align: center;
+}
+
+.container_up .all_inputs .input_cont label {
+    color: #B91450;
+    font-weight: 900;
+}
+
+main .container_up .buttons_cont button {
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #B91450;
+    border-radius: 20px;
+    background-color: lightgrey;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+/* / container up */
+
+
+
+/* container bottom */
+
+.container_bottom .ticket_title {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container_bottom .main_ticket {
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main_ticket .details_cont {
+    margin-left: 30px;
+}
+
+.main_ticket .details {
+    display: flex;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.main_ticket .details section:nth-child(1) {
+    width: 20%;
+    background-color: grey;
+    text-align: center;
+}
+
+.main_ticket .details section:nth-child(2) {
+    width: 70%;
+    /* background-color: lightgray; */
+    display: flex;
+}
+
+.main_ticket .details section:nth-child(2) .dati {
+    margin-left: 80px;
+}
+
+.main_ticket .details section:nth-child(2) .dati:nth-child(1) {
+    width: 200px;
+}
