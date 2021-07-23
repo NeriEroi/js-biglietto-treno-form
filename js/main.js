@@ -20,12 +20,12 @@ btnGenera.addEventListener('click',
         var costoTicket = prezzoStandard * km;
 
         if (age == "Minorenne") {
-            costoTicket = prezzoStandard * scontoMin;
+            costoTicket = costoTicket * scontoMin;
         } else if (age == "Over 65") {
-            costoTicket = prezzoStandard * scontoOver;
+            costoTicket = costoTicket * scontoOver;
         }
 
-        document.getElementById('costo').innerHTML = costoTicket;
+        document.getElementById('costo').innerHTML = costoTicket.toFixed(2);
 
 
         var ticket = document.getElementById('ticket');
@@ -44,8 +44,9 @@ btnAnnulla.addEventListener('click',
     function() {
         ticket.style.display = 'none';
     }
-    
 )
+
+
 
 
 
