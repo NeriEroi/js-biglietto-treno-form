@@ -11,6 +11,23 @@ btnGenera.addEventListener('click',
         document.getElementById('nomePasseggero').innerHTML = nome;
         var km = document.getElementById('km').value;
         var age = document.getElementById('age').value;
+        
+        // calcolo prezzo biglietto
+
+        var prezzoStandard = 0.21;
+        var scontoMin = 0.8;
+        var scontoOver = 0.4;
+        var costoTicket = prezzoStandard * km;
+
+        if (age == "Minorenne") {
+            costoTicket = prezzoStandard * scontoMin;
+        } else if (age == "Over 65") {
+            costoTicket = prezzoStandard * scontoOver;
+        }
+
+        document.getElementById('costo').innerHTML = costoTicket;
+
+
         var ticket = document.getElementById('ticket');
         ticket.style.display = 'block'
     }
@@ -25,8 +42,9 @@ console.log(btnAnnulla);
 
 btnAnnulla.addEventListener('click',
     function() {
-        ticket.style.display = 'none'
+        ticket.style.display = 'none';
     }
+    
 )
 
 
